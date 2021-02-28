@@ -4,19 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Mint Form</title>
 </head>
 <body>
-  <header>
-    <section class="sing in"> 
-      <div>
-        <span>Already have an Intuit account?</span>
+  <header class="top-header">
+    <section class="sign-in"> 
+      <div class="sing-in-text">
+        <p><span>Already have an Intuit account?</span></p>
         <a href="#">I forgot my User ID or Password</a>
-        <button>Sign In</button>
       </div>
+      <button>Sign In</button>
     </section>
   </header>
-  <section>
+  <div class="title">
+    <h1>INTUIT LOGO</h1>
+    <nav>
+      <ul>
+        <li><a href="#">mint</a></li>
+        <li><a href="#">quickbooks</a></li>
+        <li><a href="#">turbotax</a></li>
+      </ul>
+    </nav>
+  </div>
+  <section class="create-account-form">
     <header>
       <h2>Create an Intuit account</h2>
       <p>One account for everything Intuit, inlcuding Mint.</p>
@@ -33,8 +44,8 @@
         <label>
           Phone (recommended)
           <input type="phone">
-          <small>Standard call, messaging or data rates may apply.</small>
         </label>
+        <small>Standard call, messaging or data rates may apply.</small>
       </div>
       <div class="filed">
         <label>
