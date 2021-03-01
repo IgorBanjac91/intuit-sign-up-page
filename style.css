@@ -47,24 +47,100 @@ table {
 	border-spacing: 0;
 }
 
-a {
-  color: #0077C5;
-  text-decoration: none;
+/*
+ 1 - General
+ 2 - Layout 
+ 3 - Text Decoration
+*/
+
+
+/*--------------General----------------*/
+
+body {
+  background-color: #ECEEF1;
+  color: #393A3D;
+}
+
+.privacy-settings {
+  background-color: white;
+}
+
+.create-account-form {
+  background-color: white;
+  border: lightgray 1px solid;
+}
+
+.create-account-form footer {
+  background-color: #ECEEF1;
+}
+
+button {
+  background-color: #0077C5;
+  border: solid 1px #0077C5;
+  border-radius: 4px;
+  color: white;
+}
+
+.sign-in button {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+input {
+  border: 1px solid #C1C5C8;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #40b3ff;
+  box-shadow: 0px 0px 4px #40b3ff;
+}
+
+/*--------------Layout----------------*/
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 200px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 .top-header {
   margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 .sign-in {
   display: flex;
   justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.sign-in button {
+  margin-left: 10px;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  margin-bottom: 15px;
+}
+
+.title nav {
+  width: 250px;
 }
 
 .create-account-form {
@@ -72,4 +148,157 @@ a {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+  width: 320px;
+}
+
+h2 {
+  margin-bottom: 25px;
+}
+
+.create-account-form header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.create-account-form footer {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.field span {
+  align-self: flex-start;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.field button {
+  width: 100%;
+  height: 40px;
+}
+
+input {
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.copyright-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 750px;
+}
+
+.bottom-nav {
+  margin-bottom: 5px;
+}
+
+.privacy-settings {
+  margin-top: 70px;
+  padding: 25px;
+}
+
+/*------Text decoration--------*/
+
+body {
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #6e6e6e;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  font-size: 12px;
+  color: #0077C5;
+  text-decoration: none;
+}
+
+.title a {
+  font-size: 18px;
+  color: gray;
+}
+
+.create-account-form header p {
+  font-size: 14px;
+}
+
+.create-account-form header a {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  color: #404040;
+}
+
+span {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+  line-height: 18px;
+}
+
+.field span {
+  font-size: 10px;
+}
+
+footer .terms-policy {
+  font-size: 10px;
+}
+
+.terms-policy {
+  color: #757575;
+}
+
+.sign-in {
+  text-align: right;
+}
+
+.copyright-footer {
+  color: #505050;
+}
+
+.bottom-nav a {
+  color: #505050;
+}
+
+.privacy-settings a {
+  font-size: 14px;
 }
